@@ -1,0 +1,4 @@
+include "trubbl-sharedkernel"
+include "trubbl-api"
+include "trubbl-gui"
+include "trubbl-issues"
