@@ -1,0 +1,12 @@
+[submodule "trubbl-issues"]
+	path = trubbl-issues
+	url = https://github.com/thesam/trubbl-issues.git
+[submodule "trubbl-api"]
+	path = trubbl-api
+	url = https://github.com/thesam/trubbl-api.git
+[submodule "trubbl-gui"]
+	path = trubbl-gui
+	url = https://github.com/thesam/trubbl-gui.git
+[submodule "trubbl-sharedkernel"]
+	path = trubbl-sharedkernel
+	url = https://github.com/thesam/trubbl-sharedkernel.git
