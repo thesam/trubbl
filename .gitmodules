@@ -10,3 +10,6 @@
 [submodule "trubbl-sharedkernel"]
 	path = trubbl-sharedkernel
 	url = https://github.com/thesam/trubbl-sharedkernel.git
+[submodule "trubbl-discovery"]
+	path = trubbl-discovery
+	url = https://github.com/thesam/trubbl-discovery.git
