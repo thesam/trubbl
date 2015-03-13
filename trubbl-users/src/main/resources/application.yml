@@ -1,0 +1,13 @@
+spring:
+    application:
+        name: users
+
+server:
+    address: 0.0.0.0
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://192.168.48.10:8761/eureka/
+    instance:
+        preferIpAddress: true
