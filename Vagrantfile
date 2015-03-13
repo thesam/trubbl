@@ -24,4 +24,12 @@ Vagrant.configure(2) do |config|
         issues.vm.provision "shell", inline: "sudo sed -i s/127.0.1.1/192.168.48.30/g /etc/hosts", run: "always"
         issues.vm.provision "shell", inline: "nohup java -jar /vagrant/trubbl-issues/build/libs/*.jar &", run: "always"
     end
+    config.vm.define "users" do |users|
+        users.vm.hostname = "users"
+        users.vm.network :private_network, ip: "192.168.48.40"
+        users.vm.network "forwarded_port", guest: 8080, host: 8084
+        users.vm.provision "shell", path: "provision.sh"
+        users.vm.provision "shell", inline: "sudo sed -i s/127.0.1.1/192.168.48.40/g /etc/hosts", run: "always"
+        users.vm.provision "shell", inline: "nohup java -jar /vagrant/trubbl-users/build/libs/*.jar &", run: "always"
+    end
 end
