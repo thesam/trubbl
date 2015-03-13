@@ -13,3 +13,6 @@
 [submodule "trubbl-discovery"]
 	path = trubbl-discovery
 	url = https://github.com/thesam/trubbl-discovery.git
+[submodule "trubbl-users"]
+	path = trubbl-users
+	url = https://github.com/thesam/trubbl-users.git
